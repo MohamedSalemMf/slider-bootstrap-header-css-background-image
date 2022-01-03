@@ -1,0 +1,220 @@
+body{
+    direction: ltr;
+    text-align: left;
+	text-transform:uppercase;
+    background-color: rgba(0, 255, 255);
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+/* navbar */
+.my-ml-auto{
+    margin-left: auto;
+}
+.nav-box{
+    background-color: rgba(0, 255, 255,.5);
+}
+/* ----------------------------------------------------------------------------------------------------------- */
+
+/* ============================================================================================================================================== */
+/* start home */
+
+/* -------------------------------------------------------------- */
+/* header */
+.slidr{
+    height: 100vh;
+    /* background-color: aquamarine; */
+    background-image: url('../images/home/header/intro-bg.jpg');
+	background-size:cover;
+	background-position:center center;
+	background-attachment:fixed;
+}
+.animated { 
+    animation-duration: 1s; 
+    animation-fill-mode: both; 
+}
+.slidr .layer{
+	background-color: rgba(0,0,0,0.5);
+	height: 100%;
+}
+.caption h1{
+	font-size: 70px;
+	font-weight:900;
+	padding:10px;
+	transform: scale(1,1);
+	animation-name: scale-h1;		
+	animation-duration: 2s;
+	animation-iteration-count:1;	
+	animation-direction:alternate ;	
+	animation-delay:0.3s;	
+}
+@keyframes scale-h1{
+	0%{ 
+		transform: scale(0,0);
+		Opacity:0;
+	}
+	100%{
+		transform: scale(1,1);
+		Opacity:1;
+	}
+}
+.caption h5{
+	transform: scale(1,1);
+	
+	animation-name: scale-h5;		
+	animation-duration: 2s;
+	animation-iteration-count:1;	
+	animation-direction:alternate ;	
+	animation-delay:0.6s;	
+}
+@keyframes scale-h5{
+	0%{ 
+		transform: scale(0,0);
+		Opacity:0;
+	}
+	100%{
+		transform: scale(1,1);
+		Opacity:1;
+	}
+}
+.Read{
+	padding: 15px 30px;
+	background-color: #00c3da;
+	border:1px solid #00c3da;
+	transition:	all 1s;
+	margin: 30px 15px;
+}
+.Read:hover{
+	background-color:Transparent;
+	border:1px solid #fff;
+	transform: Translate(0px,-2px);
+}
+.Contact{
+	padding: 15px 30px;
+	background-color:Transparent;
+	border:1px solid #fff;
+	transition:	all 1s;	
+}
+.Contact:hover{
+	transform: Translate(0px,-2px);
+	background-color: #fff;
+	border:1px solid #fff;
+	color:#000
+}
+.button-headr{
+	transform: scale(1,1);
+	animation-name: scale-button1;		
+	animation-duration: 2s;
+	animation-iteration-count:1;	
+	animation-direction:alternate ;	
+	animation-delay:1s;	
+}
+@keyframes scale-button1{
+	0%{ 
+		transform: scale(0,0);
+		Opacity:0;
+	}
+	100%{
+		transform: scale(1,1);
+		Opacity:1;
+	}
+}
+/* -------------------------- */
+.slidr2{
+    background-image: url('../images/home/header/intro-bg.jpg');
+	background-position:center center;
+	background-attachment:fixed;
+	height:100vh
+}
+.slidr2 .layer{
+	background-color: rgba(0,0,0,0.5);
+	background-size:cover;
+	height: 100%;
+}
+.caption h2{
+	font-size: 100px;
+	font-weight:900;
+	padding:10px;
+	transform: scale(1,1);
+	animation-name: scale-h2;		
+	animation-duration: 2s;
+	animation-iteration-count:1;	
+	animation-direction:alternate ;	
+	animation-delay:0.3s;	
+}
+@keyframes scale-h2{
+	0%{ 
+		transform: scale(0,0);
+		Opacity:0;
+	}
+	100%{
+		transform: scale(1,1);
+		Opacity:1;
+	}
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+/* section-1 */
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------- */
+/* section-2  */
+
+/* sliedr */
+
+.slick-prev{
+	top: 30%;
+	left: -24px;
+	
+} 
+
+ .slick-next{
+    top: 30%;
+	right: -16px;
+
+}
+
+.left-slider{
+	position: absolute;
+	/* text-align: right; */
+	top: 23%;
+	left: -26px;
+
+}
+.right-slider{
+	position: absolute;
+	/* text-align: right; */
+	top: 23%;
+	right: -26px;
+
+}
+.left-slider i, .right-slider i{
+	font-size: 4rem;
+	cursor: pointer;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 30px;
+    opacity: 0;
+	background-color: cornflowerblue;
+/* padding: 10px; */
+}
+.box-slide{
+	position: relative;
+}
+.slick-prev:before {
+    content: '0';
+    opacity: 1;
+
+}
+.slick-prev:before:hover {
+    content: '0';
+    opacity: 1;
+	background-color: darkblue;
+
+}
+/* end-home */
+/* ============================================================================================================================================== */
